@@ -23,5 +23,26 @@ const printArray = (lst) => {
 printArray(lst);
 console.log('===============');
 
+let object =  {};
+// when you want to transform the
+// data into another format
+lst.map((number, index) => {
+    object[index]= number
+})
+console.log(object);
+console.log('===============');
+
+const result = lst.map((item) => item*item);
+console.log(result);
+
+const lst2 = [];
+
+lst.forEach((item) => {
+    lst2.push(item*item);
+})
+console.log('===============');
+
+console.log(lst2);
 // TODO : Look for the object traversing
 // later 
+
